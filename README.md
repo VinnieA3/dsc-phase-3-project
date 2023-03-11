@@ -89,7 +89,7 @@ Using the variables from above, we ran a Logistic Regression Model and utilized 
 
 Using a confusion matrix, we are able to visually see what our model is predicting with respects to true positives and false positives, which are what we need to calculate our precision score.
 
-<img src=data/logreg1.png>
+![1st Logistic Regression Results](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/logreg1.png)
 
 ### Third Model: Decision Tree Max Depth = 5
 
@@ -99,7 +99,7 @@ To further iterate on our second model, we went back and decided to try finding 
 
 Using a confusion matrix, we are able to visually see what our model is predicting with respects to true positives and false positives, which are what we need to calculate our precision score.
 
-<img src=data/logreg2.png>
+![2nd Logistic Regression Results](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/logreg2.png)
 
 However, when we analyzed the coefficients for this model it appeared that there were a number of coefficients that did not have a substantial impact on determining vaccine outcome. As such we wanted to create one more model.
 
@@ -113,22 +113,22 @@ Using a depth of 3 yielded four variables that were considered important: `docto
 
 Our final model was created using Logistic Regression and features found from our previous decision tree. The precision score obtained was 70%. From this model we were able to extract coefficients that gave us the log odds chances that an individaul would get the vaccine based on the features used for modeling.
 
-<img src=data/logreg3.png>
+![3rd Logistic Regression Results](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/logreg3.png)
 
 ## Data Visuals Creation
 
 ### Race vs. Vaccination Status
-<img src=data/race.png>
+![Race vs. Vaccination Status](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/race.png)
 
 These results show the vaccination rates through the race classes from the data we have. Here we have imbalanced survey results showing that the majority of the sample size being white (80%), and the rest being people of color (20%)
 
 ### Doctor Recommendation vs. Vaccination Status
-<img src=data/docrec.png>
+![Doctor Recommendation vs. Vaccination Status](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/docrec.png)
 
 These results show the vaccination rates for individuals if recommended by doctor. This shows the vaccination rates are significantly higher when recommended by a doctor.
 
 ### Age Group vs. Vaccination Status
-<img src=data/ages.png>
+![Age Group vs. Vaccination Status](https://github.com/albertcchen/dsc-phase-3-project/blob/main/images/ages.png)
 
 This shows the vaccination rates broken down by age groups. This seems to be a balanced data distribution amongst the age groupings, and shows that as the age group increases, so does the vaccination rates.
 
@@ -148,3 +148,6 @@ Based on the results of the National 2009 H1N1 Flu Survey and the ML models deve
 - Wanted to include data from other demographics as the dataset we used was not balanced.
 - Look at additional income levels for repondents since the majority class was 'Well Off'
 - Utilize survey data from the COVID pandemic to see if additional variables can be identified to help categorize if a respondent does get the vaccination.
+
+## Presentation is available as
+[PDF](https://github.com/albertcchen/dsc-phase-3-project/blob/main/Phase_3_Vaccine_Predictions_slides.pdf)
